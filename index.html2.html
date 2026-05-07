@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+ <html lang="en"> 
+  <head> <meta charset="UTF-8"> <title>ADHD Learning App</title> <link rel="stylesheet" href="style.css"> </head>
+   <body> <div class="app"> 
+    <!-- NAV --> <nav class="nav">
+       <button onclick="showPage('home-screen')">Home</button> 
+       <button onclick="showPage('info')">What is ADHD?</button> 
+       <button onclick="showPage('brain')">Brain</button> 
+       <button onclick="showPage('sociology')">Sociology</button>
+        <button onclick="startQuiz()">Quiz</button> 
+</nav> <!-- HOME --> 
+<div id="home-screen" class="page active">
+   <h1>Understanding ADHD</h1>
+    <p> ADHD (Attention-Deficit/Hyperactivity Disorder) is a neurodevelopmental condition that affects attention, impulse control, and executive functioning. This site explores ADHD from psychological, biological, and sociological perspectives. </p>
+     <div class="card">
+       <h3>What you will learn</h3>
+        <ul>
+           <li>How ADHD affects the brain and dopamine system</li> 
+           <li>Psychological explanations of attention and behaviour</li>
+            <li>Sociological impact including stigma and social expectations</li>
+             <li>Strengths and challenges of ADHD</li> 
+             <li>Myths vs facts + interactive quiz</li> 
+            </ul> 
+     </div> 
+       <div class="card"> 
+        <h3>Why this matters</h3> 
+        <p> ADHD is often misunderstood as laziness or lack of effort. In reality, it is a neurological difference that affects how the brain processes motivation and attention. </p>
+        </div> 
+       <button onclick="startQuiz()">Start Quiz</button>
+       </div> <!-- INFO --> 
+        <div id="info" class="page"> 
+         <h2>What is ADHD?</h2>
+           <p> ADHD is a neurodevelopmental disorder that affects attention regulation, impulse control, and activity levels. It is commonly diagnosed in childhood but continues into adulthood for many people. </p>
+           <div class="card"> 
+              <h3>Core symptoms</h3>
+               <ul>
+               <li>Difficulty sustaining attention</li>
+                  <li>Impulsivity (acting without thinking)</li>
+                   <li>Hyperactivity or internal restlessness</li>
+                   </ul>
+            </div>
+               <div class="card">
+                 <h3>Important understanding</h3>
+                  <p> ADHD is not caused by poor parenting, laziness, or low intelligence. It is linked to differences in brain development and neurotransmitter regulation. </p> 
+          </div>
+            <div class="card">
+               <h3>Real-life impact</h3> 
+               <p> ADHD can affect school performance, time management, emotional regulation, and relationships. However, many individuals develop strong creativity, resilience, and problem-solving skills. </p>
+               </div> 
+              </div> <!-- BRAIN --> 
+              <div id="brain" class="page"> 
+                <h2>The ADHD Brain</h2> 
+                <p> ADHD is associated with differences in dopamine regulation and activity in the prefrontal cortex, which controls planning, attention, and impulse control. </p> 
+                <div class="card"> 
+                  <h3>Dopamine system</h3> 
+                  <p> Dopamine is a neurotransmitter linked to motivation and reward. In ADHD, dopamine signaling can be less consistent, making it harder to start or maintain focus on low-interest tasks. </p> 
+                </div> 
+                <div class="card"> 
+                  <h3>Prefrontal cortex</h3>
+                   <p> This part of the brain is responsible for executive functions like planning, organizing, and controlling impulses. Differences here affect time management and task completion. </p> 
+                  </div> 
+                  <div class="card">
+                     <h3>Strengths of ADHD brains</h3>
+                      <ul>
+                         <li>Creativity and idea generation</li>
+                          <li>Hyperfocus on interesting tasks</li> 
+                          <li>Fast thinking in high-pressure situations</li>
+                           <li>Strong problem-solving in dynamic environments</li> 
+                          </ul>
+                         </div>
+                         </div> <!-- SOCIOLOGY -->
+                          <div id="sociology" class="page">
+                             <h2>ADHD: Sociological Perspective</h2>
+                              <p> ADHD is not only a medical condition — it is also shaped by society. Sociology helps explain how social expectations and stigma influence lived experience. </p>
+                               <div class="card">
+                                 <h3>Social norms</h3> 
+                                 <p> Schools and workplaces often expect long periods of focus, silence, and structured behaviour. These expectations define what is considered “normal” attention and behaviour. </p>
+                                 </div>
+                                  <div class="card">
+                                     <h3>Stigma and labelling</h3>
+                                      <p> People with ADHD are sometimes labelled as “lazy,” “unfocused,” or “disruptive.” These labels do not reflect neurological reality and can negatively impact self-esteem. </p>
+                                     </div>
+                           <div class="card">
+                                  <h3>Impact of environment</h3>
+                                  <p> Supportive environments (flexible teaching, understanding peers, structured routines) can significantly improve outcomes for individuals with ADHD. </p>
+                                   </div>
+                                    <div class="card">
+                                    <h3>Key idea</h3>
+                                        <p> ADHD is shaped by both biology and society — meaning environment plays a major role in how symptoms are experienced and understood. </p>
+                                       </div>
+                                       </div> <!-- QUIZ -->
+                                           <div id="quiz-screen" class="screen">
+                                           <div class="top-bar">
+                                             <div id="progress-bar">
+                                              <div id="progress"></div></div>
+                                                     <div id="timer">15:00</div> </div> 
+                                                     <h2 id="question"></h2> <div id="answers"></div> 
+                                                     <button id="next-btn" onclick="nextQuestion()" disabled>Next</button> </div> 
+                                                     <!-- RESULTS --> <div id="result-screen" class="screen"> 
+                                                      <h1>Results</h1> 
+                                                        <h2 id="score"></h2>
+                                                         <p id="feedback"></p>
+                                                          <button onclick="restartQuiz()">Back to Home</button>
+                                                         </div> 
+                                                        </div>
+                                                         <script src="script.js">
+
+                                                         </script> 
+                                                         </body> 
+                                                         </html> index
